@@ -5496,6 +5496,8 @@ with pkgs;
     libxml2 = libxml2.override { pythonSupport = false; };
     python2 = callPackage ../development/interpreters/python/cpython/2.7/boot.nix { inherit (darwin) CF configd; };
   });
+  
+  llvm_OpenMP = callPackage ../development/libraries/llvm_OpenMP { };
 
   manticore = callPackage ../development/compilers/manticore { };
 

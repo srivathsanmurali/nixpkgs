@@ -1,4 +1,4 @@
-{stdenv fetchgit cmake gnumake perl}:
+{stdenv, fetchgit, cmake, gnumake, perl}:
 
 stdenv.mkDerivation rec {
   name = "openmp-${version}";
